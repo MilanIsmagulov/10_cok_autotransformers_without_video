@@ -286,10 +286,6 @@ body{
 
 .step_marker_and_buttons{
     padding-bottom: 0.5em !important;
-    width: 96%;
-    z-index: 3;
-    position: fixed;
-    bottom:0em;
     background-color: white;
     padding-top:0.5em;
 }
@@ -310,8 +306,7 @@ body{
 }
 .left_side{
     width: 100%;
-    margin-bottom: 2.5em;
-    
+    margin-bottom: .05em;
 }
 
 .bluetext{
@@ -322,12 +317,13 @@ body{
 }
 
 .blocked{
+    display: none;
     background-color: #bfbfbf !important;
 }
 .flexcenter{
     display: flex !important;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     padding-right: 5px;
     flex-direction: column;
 }
@@ -467,7 +463,7 @@ body{
 }
 .leftimage.text{
     display: inline-block;
-    width: 55%;
+    width: 65%;
     margin-left:2.5em;
 }
 .leftimage.text img{
@@ -475,8 +471,8 @@ body{
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0.0);
 }
 .leftimage{
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: .5em;
+    margin-bottom: .5em;
     display: flex;
 }
 .left30{
@@ -628,7 +624,7 @@ body{
 }
 .assignnum,
 .assignnum::placeholder{
-    font-size: 12px;
+    font-size: 20px;
 }
 .leftimage_zoom_popup{
     cursor: pointer;
@@ -667,8 +663,9 @@ body{
     padding-top: 0.5em;
     padding-left: 1em;
     padding-right: 1em;
+    width: 100% !important;
     font-size: 0.8em !important;
-    min-height: 3em;
+    min-height: 1em;
 }
 .cornum_select{
     display: flex;

@@ -70,3 +70,42 @@ for (i of arr){
 
         });
 }
+
+let plan=['Ознакомьтесь с правилами безопасной работы.','Ознакомьтесь с конструкцией однофазного автотрансформатора.','Установите соответствие между изображениями и названиями элементов лабораторного регулируемого однофазного автотрансформатора.','Ознакомьтесь с методикой определения основных параметров автотрансформатора.','Вычислите число витков вторичной обмотки w₂.','Ознакомьтесь с конструкцией и назначением элементов трёхобмоточного трансформатора.','Установите соответствие между номерами на изображении и названиями элементов трехобмоточного трансформатора.','Установите соответствие между назначением и названием элементов трехобмоточного трансформатора.','Установите соответствие между изображениями и названиями элементов вспомогательного оборудования трехобмоточного трансформатора. ']
+
+
+let numberOfQuestionSum =9
+let numberOfQuestion = 9
+
+let stepMarkerPlace = document.querySelector('.step_marker');
+console.log("stepMarkerPlace")
+for (let i = 0; i < numberOfQuestion; i++){
+    let markers = document.createElement('img');
+    markers.src = "./content/radio_button_blue.svg";
+    stepMarkerPlace.appendChild(markers);
+}
+
+for (let i = 0; i < numberOfQuestionSum-numberOfQuestion; i++){
+    let markers = document.createElement('img');
+    markers.src = "./content/radio_button.svg";
+    stepMarkerPlace.appendChild(markers);
+}
+
+function openPopUp(){
+    let popUpWindow = document.querySelector('#popup1')
+    popUpWindow.classList.remove('close')
+}
+
+function closePopUp(){
+    let popUpWindow = document.querySelector('#popup1')
+    popUpWindow.classList.add('close')
+}
+
+let planPopUp=document.querySelector('.popup_text')
+i=1
+for(let elem of plan){
+   text=document.createElement('h3')
+   text.innerHTML="<p><span>"+ i + ".</span> " + elem + "</p>"
+   planPopUp.appendChild(text)
+   i++
+}

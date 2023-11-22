@@ -17,6 +17,7 @@ const leftColElem = document.getElementById('left-col')
 const rightColElem = document.getElementById('right-col')
 
 let rightcheck=1;
+let numberOfQuestion = 3;
 
 let dragElem2;
 let startIndx;
@@ -229,3 +230,4 @@ function addEventListeners3() {
         // elem.addEventListener('drop', dragDrop2);
     })
 }
+

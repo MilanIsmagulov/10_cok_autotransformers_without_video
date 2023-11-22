@@ -1,5 +1,4 @@
 .popup_text{
-
     overflow-y: auto;
     scroll-snap-align: start;
     padding: 15px;
@@ -190,10 +189,7 @@
 
 .theory_eom{
     flex-direction: column;
-    height:65vh;
-    overflow-y: auto;
     margin-right: 25px;
-
 }
 
 .image_part{
@@ -203,7 +199,6 @@
     padding: 15px;
     margin: 35px;
     border-radius: 35px;
-
 }
 
 .zoom_popup{
@@ -235,7 +230,7 @@
     align-items: center;
 }
 
-.theory_eom::-webkit-scrollbar-track
+body::-webkit-scrollbar-track
 {   
     border-radius: 10px;
 	background-color: #dadada;
@@ -244,7 +239,7 @@
     width: 25px;
 }
 
-.theory_eom::-webkit-scrollbar
+body::-webkit-scrollbar
 {
     border-radius: 10px;
 	width: 10px;
@@ -253,7 +248,7 @@
     width: 15px;
 }
 
-.theory_eom::-webkit-scrollbar-thumb
+body::-webkit-scrollbar-thumb
 {   
 
 	background-color: rgba(0, 0, 0, .2);
@@ -270,6 +265,7 @@
     width: 80%;
 }
 
+
 .right_side video{
     
     width: 80%;
@@ -283,38 +279,32 @@
 }
 
 @media (max-width: 1180px) {
-    .black_header{
-        height: 120px;
-    }
-
-
     .black_header h1{
-        width: 50%;
+        width: 50% !important;
     }
-
     .step_marker_and_buttons{
         display: flex;
-    }
 
-    .theory_eom{
-        height: 62vh;
+    }
+    .leftimage{
+        align-items: flex-start !important;
+        margin: 0 !important;
+        width: 100% !important;
+        flex-direction: column !important;
+    }
+    .leftimage .text .flexcenter{
+        align-items: flex-start !important;
     }
     .content{
         margin-right: 0;
     }
     .popup_text img{
-
         height: 100%;
     }
-    .popup_body{
-        height: 50vh;
-    }
-    .popup_content {
-        height: 50vh;
-    }
-    .popup_text{
-        display: flex;
-        align-items: center;
-        height: 500px;
-    }
+}
+
+.questions span{
+    font-size: 40px !important;
+    font-weight: 800 !important;
+    color: black;
 }

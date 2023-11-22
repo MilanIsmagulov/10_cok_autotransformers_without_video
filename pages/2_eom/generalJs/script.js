@@ -27,7 +27,7 @@ for (let i = 0; i < numberOfQuestionSum-numberOfQuestion; i++){
 }
 
 let stepPlaceDescription = document.querySelector('.number_description');
-stepPlaceDescription.innerHTML = numberOfQuestion + '/' + numberOfQuestionSum;
+stepPlaceDescription.innerHTML = '<b>' + numberOfQuestion + '/' + numberOfQuestionSum + '</b>';
 
 
 let img1 = document.createElement('img');

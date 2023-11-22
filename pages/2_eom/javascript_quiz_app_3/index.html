@@ -6,7 +6,11 @@
     <script src="./script/Sortable.js"></script>
     <script src="./script/script.js" defer></script>
     <script src="./script/script3.js" defer></script>
-    
+    <script src="../generalJs/script.js" defer></script>
+
+    <link rel="stylesheet" href="../generalStyles/style.css">
+    <link rel="stylesheet" href="../generalStyles/test.css">
+    <link rel="stylesheet" href="../generalStyles/popup.css">
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/style.css">
     <title>Трехобмоточные трансформаторы. Автотрансформаторы</title>
@@ -18,16 +22,16 @@
                 Трехобмоточные трансформаторы. Автотрансформаторы
             </h1>
             <div class="links_black_header">
-                <a href="#">На главную</a>
+                <a href="../../../index.html">На главную</a>
             </div>
         </div>
         <div class="head_text">
             <div class="questions" id="question_number_1">
-                <h2><span>3. </span>Установите соответствие между изображениями и названиями элементов лабораторного регулируемого однофазного автотрансформатора. </h2>
+                <h2><span> </span>Установите соответствие между изображениями и названиями элементов лабораторного регулируемого однофазного автотрансформатора. </h2>
             </div>
             <div class="number_marker">
-                <img src="./content/description.svg" alt="description">
-                <p>3/9</p>
+                <img id="open_popup_button" style="cursor: pointer;" onclick="openPopUp()" src="./content/description.svg" alt="description">
+                <p class="number_description"></p>
             </div>
         </div>
         <div class="main_window">
@@ -41,16 +45,7 @@
                     <div class="row2" id="row2" index="row"></div>
                     <div class="main_buttons">
                         <div class="step_marker">
-                            <img src="./content/radio_button_blue.svg" alt="radio_button" class="step_marker_2">
-                            <img src="./content/radio_button_blue.svg" alt="radio_button" class="step_marker_1">
-                            <img src="./content/radio_button_blue.svg" alt="radio_button" class="step_marker_1">
-                            <img src="./content/radio_button.svg" alt="radio_button" class="step_marker_1">
-                            <img src="./content/radio_button.svg" alt="radio_button" class="step_marker_1">
-                            <img src="./content/radio_button.svg" alt="radio_button" class="step_marker_1">
-                            <img src="./content/radio_button.svg" alt="radio_button" class="step_marker_1">
-                            <img src="./content/radio_button.svg" alt="radio_button" class="step_marker_1">
-                            <img src="./content/radio_button.svg" alt="radio_button" class="step_marker_1">
-                            <img src="./content/radio_button.svg" alt="radio_button" class="step_marker_1">
+
                         </div>
                         <div class="buttons_div">
                             <button id="check_button_0" onclick="location.href='../javascript_quiz_app_2/index.html'">
@@ -66,6 +61,19 @@
                                 Далее
                             </button>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup1" class="popup close">
+            <div class="popup_body">
+                <div class="popup_content">
+                    <div class="popup_header">
+                        <h3></h3>
+                        <button onclick="closePopUp()" id="close_popup_button_1"><img src="./content/close.svg" alt="close"></button>
+                    </div>
+                    <div class="popup_text">
+                        
                     </div>
                 </div>
             </div>

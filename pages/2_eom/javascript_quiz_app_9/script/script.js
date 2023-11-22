@@ -177,7 +177,7 @@ function checkAnwser3() {
     fullList.forEach((item, index) => {
         if (item.querySelector('.item3')?.innerText.trim() === undefined) {
             item.classList.add('incorrect')
-            localStorage.setItem('answer_3', JSON.stringify({questionPlace: false}));
+            localStorage.setItem(`answer_${numberOfQuestion}`, JSON.stringify({questionPlace: false}));
             reloadButton.classList.remove('disabled_button')
             nextButton.classList.remove('disabled_button')
             answerButton.classList.add('disabled_button')
@@ -188,7 +188,7 @@ function checkAnwser3() {
             if (itemName !== anwserArr3[index]) {
                 item.classList.add('incorrect')
                 rightcheck=0
-                localStorage.setItem('answer_3', JSON.stringify({questionPlace: false}));
+                localStorage.setItem(`answer_${numberOfQuestion}`, JSON.stringify({questionPlace: false}));
                 reloadButton.classList.remove('disabled_button')
                 nextButton.classList.remove('disabled_button')
                 answerButton.classList.add('disabled_button')
@@ -202,7 +202,7 @@ function checkAnwser3() {
         }
     })
     if (rightcheck==1){
-        localStorage.setItem('answer_3', JSON.stringify({questionPlace: true}));
+        localStorage.setItem(`answer_${numberOfQuestion}`, JSON.stringify({questionPlace: true}));
     }
 }
 

@@ -273,7 +273,7 @@ body{
 }
 
 .item{
-    width: 1000px;
+    width: 100% !important;
 }
 
 
@@ -294,7 +294,6 @@ body{
   .numbers{
     display: flex;
     flex-direction: column;
-    height: 50vh;
     justify-content: space-around;
   }
 
@@ -329,7 +328,7 @@ body{
     padding-right: 15px;
     align-items: center;
     height: 100px;
-    width: 500px;
+    width: 99% !important;
     margin-bottom: 0.4em;
   }
 
@@ -340,9 +339,9 @@ body{
   
 
   .item{
-    height: 80px;
-    font-size: 23px;
-    padding-left: 25px;
+    height: 110px;
+    font-size: inherit;
+    padding: 25px;
     border-radius: 5px 5px 5px 5px;
     display: flex;
     align-items: center;
@@ -356,10 +355,20 @@ body{
 
     }
 
+    .item{
+        font-size: 16px !important;
+    }
+    
     .number{
-      height: 150px;
-      width: 400px;
+      height: 100px;
+      width: 300px !important;
       margin-left: 20px;
+      font-size: 18px !important;
+    }
+
+
+    .number img{
+        display: none;
     }
 
     .item{
